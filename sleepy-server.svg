@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#e0f2fe"/>
+  <!-- server body -->
+  <rect x="90" y="60" width="120" height="190" rx="12" fill="#475569"/>
+  <rect x="102" y="80" width="96" height="30" rx="4" fill="#334155"/>
+  <rect x="102" y="200" width="96" height="30" rx="4" fill="#334155"/>
+  <circle cx="186" cy="95" r="5" fill="#22c55e"/>
+  <circle cx="186" cy="215" r="5" fill="#ef4444"/>
+  <!-- sleepy eyes -->
+  <path d="M115 145 q12 10 24 0" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <path d="M161 145 q12 10 24 0" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- mouth -->
+  <ellipse cx="150" cy="175" rx="9" ry="6" fill="#1e293b"/>
+  <!-- nightcap -->
+  <path d="M90 66 L150 10 L210 66 Z" fill="#2563eb"/>
+  <circle cx="150" cy="10" r="10" fill="#fff"/>
+  <!-- zzz -->
+  <text x="220" y="70" font-family="Comic Sans MS, cursive" font-size="28" font-weight="bold" fill="#2563eb">Z</text>
+  <text x="240" y="45" font-family="Comic Sans MS, cursive" font-size="22" font-weight="bold" fill="#2563eb">z</text>
+  <text x="255" y="25" font-family="Comic Sans MS, cursive" font-size="16" font-weight="bold" fill="#2563eb">z</text>
+  <rect x="80" y="250" width="140" height="10" rx="4" fill="#94a3b8"/>
+</svg>

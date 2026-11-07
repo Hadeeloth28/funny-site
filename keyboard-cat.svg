@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <rect width="300" height="300" fill="#fef3c7"/>
+  <!-- keyboard -->
+  <rect x="30" y="210" width="240" height="60" rx="8" fill="#1f2937"/>
+  <g fill="#4b5563">
+    <rect x="42" y="220" width="22" height="16" rx="3"/><rect x="70" y="220" width="22" height="16" rx="3"/>
+    <rect x="98" y="220" width="22" height="16" rx="3"/><rect x="126" y="220" width="22" height="16" rx="3"/>
+    <rect x="154" y="220" width="22" height="16" rx="3"/><rect x="182" y="220" width="22" height="16" rx="3"/>
+    <rect x="210" y="220" width="22" height="16" rx="3"/><rect x="238" y="220" width="22" height="16" rx="3"/>
+    <rect x="70" y="244" width="160" height="16" rx="3"/>
+  </g>
+  <!-- cat body lying on keyboard -->
+  <ellipse cx="150" cy="200" rx="95" ry="38" fill="#f97316"/>
+  <path d="M60 205 q-30 -10 -25 -45" stroke="#f97316" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <!-- head -->
+  <circle cx="215" cy="160" r="42" fill="#f97316"/>
+  <path d="M182 135 L188 98 L208 125 Z" fill="#f97316"/>
+  <path d="M248 135 L242 98 L222 125 Z" fill="#f97316"/>
+  <!-- smug eyes -->
+  <path d="M195 155 h16" stroke="#1f2937" stroke-width="5" stroke-linecap="round"/>
+  <path d="M222 155 h16" stroke="#1f2937" stroke-width="5" stroke-linecap="round"/>
+  <path d="M207 175 q9 8 18 0" stroke="#1f2937" stroke-width="3" fill="none"/>
+  <polygon points="212,166 220,166 216,171" fill="#ec4899"/>
+  <!-- stripes -->
+  <path d="M110 170 q5 15 0 30 M135 165 q5 18 0 36 M160 166 q5 16 0 32" stroke="#c2410c" stroke-width="5" fill="none"/>
+  <!-- typed text -->
+  <rect x="20" y="20" width="260" height="60" rx="8" fill="#fff" stroke="#d97706" stroke-width="2"/>
+  <text x="34" y="58" font-family="Consolas, monospace" font-size="18" fill="#111827">$ rm -rf /meow;;;;;;;</text>
+</svg>

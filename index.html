@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Comedy Club</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Comic Sans MS", "Chalkboard SE", system-ui, sans-serif;
+      background: #fdf4ff;
+      color: #1e1b4b;
+      padding: 16px;
+    }
+    header { text-align: center; padding: 24px 0 8px; }
+    h1 { font-size: 2.4rem; margin: 0; }
+    header p { margin: 8px 0 0; font-size: 1.1rem; }
+    .grid {
+      max-width: 1000px;
+      margin: 24px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: rotate(-2deg) scale(1.03); }
+    .card img { width: 100%; display: block; }
+    .card p { margin: 0; padding: 14px; font-size: 1rem; }
+    .joke-box {
+      max-width: 640px;
+      margin: 32px auto;
+      background: #fff;
+      border: 3px dashed #a855f7;
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+    }
+    #joke { font-size: 1.2rem; min-height: 3em; }
+    button {
+      font: inherit;
+      background: #a855f7;
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      padding: 10px 24px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover { background: #9333ea; }
+    footer { text-align: center; color: #6b7280; font-size: 0.9rem; padding: 16px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>☁️ Cloud Comedy Club 🎤</h1>
+    <p>Proudly served by Apache on a very confused Ubuntu VM.</p>
+  </header>
+
+  <section class="grid">
+    <div class="card">
+      <img src="images/sleepy-server.svg" alt="A sleepy server wearing a nightcap">
+      <p><b>Production server at 3 AM</b><br>"Five more minutes…"</p>
+    </div>
+    <div class="card">
+      <img src="images/keyboard-cat.svg" alt="A cat lying on a keyboard typing a command">
+      <p><b>The real SRE</b><br>Has root access. Did not ask for it.</p>
+    </div>
+    <div class="card">
+      <img src="images/potato-vm.svg" alt="A sweating potato labelled as a tiny VM">
+      <p><b>The free tier VM</b><br>Running Kubernetes. Somehow.</p>
+    </div>
+    <div class="card">
+      <img src="images/cloud.svg" alt="A cloud with sunglasses hiding a small computer">
+      <p><b>The cloud</b><br>Shh, don't tell anyone.</p>
+    </div>
+  </section>
+
+  <section class="joke-box">
+    <div id="joke">Click the button for a cloud joke.</div>
+    <br>
+    <button onclick="nextJoke()">Tell me another 😂</button>
+  </section>
+
+  <footer>Built for a GCP lab. No potatoes were harmed.</footer>
+
+  <script>
+    const jokes = [
+      "Why did the VM go to therapy? It had too many unresolved snapshots.",
+      "My cloud bill and I have a lot in common: we both keep growing for no clear reason.",
+      "I told my server a joke about UDP. I don't know if it got it.",
+      "There's no place like 127.0.0.1.",
+      "Why was the Linux admin calm? Because they had sudo control of their feelings.",
+      "A load balancer walks into a bar. And a bar. And a bar.",
+      "It works on my machine. Then we'll ship your machine. That's how Docker was born.",
+      "Why did the firewall break up with the port? It needed some space… port 22 only.",
+      "I'd tell you a joke about DNS, but it might take 48 hours to reach you."
+    ];
+    let last = -1;
+    function nextJoke() {
+      let i;
+      do { i = Math.floor(Math.random() * jokes.length); } while (i === last);
+      last = i;
+      document.getElementById("joke").textContent = jokes[i];
+    }
+  </script>
+</body>
+</html>
